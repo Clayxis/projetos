@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documento</title>
+    <script src="./js/script.js" defer></script>
+    <link rel = "stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="elemento"></div>
+
+    <div class="container">
+        <h1>TE<span id="dick">STO</span></h1>
+    </div>
+
+    <div>
+        <button onclick="mostrarMensagem()">Clique aqui para visualizar a mensagem</button>
+        <p id="mensagem"></p>
+    </div>
+
+    <div>
+        <input type="text" id="campo">
+        <button onclick="texto()">Pegar texto</button>
+    </div>
+
+    <div>
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+        <button onclick="somar()">somar</button>
+
+    </div>
+
+    <div>
+        <button onclick="mostrar()">Mostrar/Esconder</button>
+        <p id="elementoOculto" style="display: none;">
+            Esse texto esta oculto
+        </p>
+
+    </div>
+
+    <div>
+        <button onclick="trocaTema()">Trocar Tema</button>
+    </div>
+
+    <div>
+        <h1>Pressione uma tecla</h1>
+        <p>Ultima tecla: <span id="ultimaTecla"> </span> </p>
+    </div>
+
+    <div>
+        <h1>Relogio</h1>
+        <p id="relogio"></p>
+    </div>
+
+    <style>
+        .theme-light{
+            background-color: #fff;
+            color: #000;
+
+        }
+
+        .theme-dark{
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</body>
+
+</html>

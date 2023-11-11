@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTES</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="planos">
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h1 class="tituloGeral text-center">Plano</h1>
+                            <h6 class="card-text mb-4">R$50,99</h6>
+                            <button onclick="flipCard(this)">Mostrar Mais</button>
+                        </div>
+                        <div class="card-back">
+                            <ul>
+                                <li>Suporte 24h</li>
+                                <li>Integraçao com Whatsapp</li>
+                                <li>Armazenamento Ilimitado</li>
+                            </ul>
+                            <button onclick="flipCard(this)">Mostrar Menos</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="./js/animacao.js"></script>
+</body>
+</html>

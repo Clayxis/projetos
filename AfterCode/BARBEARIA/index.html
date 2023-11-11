@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Barbearia</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Inconsolata:wght@200;300&family=Inter:wght@200&family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul id="lista">
+                <li>| Home</li>
+                <li>| Contato</li>
+                <li>| Serviços</li>
+                <a id="unidades" href="mapa.html"><li>| Unidades</li></a>
+            </ul>
+            
+            <ul>
+                <li id="login">| Login</li>
+            </ul>
+        
+        </nav>
+
+     
+            
+    </header>
+    <main class="main_principal">
+        <div class="texto_principal">
+
+            <h1><span class="red">Bar</span>bearia <span class="hair">Hair`s Beautiful</span></h1>
+            <p>A Melhor Barbearia do Brasil</p>
+
+        </div>
+
+    </main>
+    <section class="section_sobre" id="sobre">
+        <div class="sobre_nos">
+            <h2>Sobre nós</h2>
+
+            <div class="sobre_texto">
+                <p>Somos uma equipe de profissionais apaixonados por cortes de cabelo,
+                     barbas e estilo. Com anos de experiência, estamos dedicados a oferecer os melhores serviços de cuidado masculino.
+                     Nosso espaço foi projetado para criar uma atmosfera acolhedora e relaxante. 
+                     Aqui, você pode desfrutar de um momento de tranquilidade enquanto cuidamos do seu visual.</p>
+            </div>
+        </div>
+
+        <div class="sobre-imagem">
+            <img src="./imagens/istockphoto-1395873163-612x612.jpg">
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+    <footer>
+        <div class="footer-content" id="contato">
+            <div class="logo">
+                <a href="#">
+                    <h1>Siga-nos nas redes</h1>
+                </a>
+                <hr class="red-line" />
+                <div class="social-icons">
+                    <a href="#"><img src="./imagens/png-transparent-instagram-logo-logo-instagram-computer-icons-camera-instagram-logo-text-trademark-magenta-removebg-preview.png" alt="instagram" height="50"></a>
+                    <a href="#"><img src="./imagens/twitter-logo-twitter-icon-transparent-free-free-png.webp" alt="twitter" height="50"></a>
+                    <a href="#"><img src="./imagens/png-transparent-iphone-whatsapp-logo-whatsapp-call-icon-grass-mobile-phones-instant-messaging-removebg-preview.png" alt="whatsapp" height="50"></a>
+
+                </div>
+            </div>
+
+            <div class="links_rodape">
+                <ul>
+                    <li> <a href="#">| Sobre</a></li>
+                    <li> <a href="#">| Produtos</a></li>
+                    <li> <a href="#">| Reserva</a></li>
+                </ul>
+            </div>
+
+            <div class="links_rodape">
+                <ul>
+                    <li> <a href="./localizacao.html">| Localização</a></li>
+                    <li> <a href="#">| Politicas de Privacidade</a></li>
+                    <li> <a href="#">| Termos de Uso</a></li>
+                </ul>
+            </div>
+
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="email">Seu e-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Insira seu e-mail">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="label_Textoarea">Seu e-mail</label>
+                        <textarea name="message" id="canto-de-texto" placeholder="Digite sua mensagem aqui"
+                            required></textarea>
+                    </div>
+
+                    <br>
+                    <div class="input-button" onclick="funcao1()" value="Exibir Alert">
+                        <button type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="desenvolvido-por">Desenvolvido por AfterCode &copy; 2023</div>
+   
+
+    </footer>
+    <script>
+        function funcao1(){
+            let email = document.getElementById('email').value
+            let mensagem = document.getElementById('canto-de-texto').value
+
+            if (email.trim() ==='' || mensagem.trim() === ''){
+                alert("Por favor digite uma mensagem")
+            } else {
+                alert("Mensagem enviada")
+            }
+            
+        }
+    </script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+
+</html>
